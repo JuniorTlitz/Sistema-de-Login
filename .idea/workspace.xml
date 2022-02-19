@@ -5,16 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2c42d0db-1b74-4ef6-9669-353d5e321563" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/contexts/Auth/AuthContext.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/contexts/Auth/AuthProvider.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/contexts/Auth/RequireAuth.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/hooks/useApi.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/login/login.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/types/User.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/contexts/Auth/AuthProvider.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/contexts/Auth/AuthProvider.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hooks/useApi.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/hooks/useApi.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Private/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Private/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/login/login.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/login/login.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,7 +61,7 @@
       <option name="presentableId" value="Default" />
       <updated>1645221876774</updated>
       <workItem from="1645221881294" duration="1977000" />
-      <workItem from="1645268724241" duration="3653000" />
+      <workItem from="1645268724241" duration="8792000" />
     </task>
     <servers />
   </component>

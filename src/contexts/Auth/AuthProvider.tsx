@@ -1,5 +1,5 @@
 import {AuthContext} from "./AuthContext";
-import {useState} from "react";
+import {useEffect, useState} from "react";
 import {User} from "../../types/User";
 import {useApi} from "../../hooks/useApi";
 
@@ -7,10 +7,24 @@ export const AuthProvider = ({children}: { children: JSX.Element }) => {
     const [user, setUser] = useState<User | null>(null);
     const api = useApi();
 
+    useEffect(() => {
+        const validateToken = async () => {
+            const storegeData = localStorage.getItem('authToken');
+            if(storegeData){
+                const data = await api.validadeToken(storegeData)
+                if(data.user){
+                    setUser(data.user);
+                }
+            }
+        }
+        validateToken();
+    }, [api])
+
     const signin = async (email: string, password: string) => {
         const data = await api.signin(email, password);
         if(data.user && data.token){
             setUser(data.user)
+            setToken(data.token);
             return true;
         }
         return false;
@@ -19,6 +33,11 @@ export const AuthProvider = ({children}: { children: JSX.Element }) => {
     const signout = async () => {
         await api.logout();
         setUser(null);
+        setToken('');
+    }
+
+    const setToken = (token: string) => {
+        localStorage.setItem('authToken', token);
     }
 
     return (
